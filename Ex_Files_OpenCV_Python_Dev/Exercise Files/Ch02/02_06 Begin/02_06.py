@@ -5,7 +5,7 @@ image = cv2.imread("thresh.jpg")
 height, width, ch = image.shape
 cv2.imshow('Original', image)
 
-blur = cv2.GaussianBlur(image, (55, 5), 1)
+blur = cv2.GaussianBlur(image, (55, 5), 0)
 cv2.imshow('Gaussian Blur', blur)
 
 kernel = np.ones((5, 5), 'uint8')
